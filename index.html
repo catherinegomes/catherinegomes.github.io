@@ -1,56 +1,119 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
     <head>
-        <title>My Personal Page</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
+        <meta charset="UTF-8">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Visualization</title>
+        <link rel="stylesheet" href="/Resources/assets/css/style.css">
     </head>
+
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="cv.html">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        <div class="container">
-            <h1>Welcome</h1>
-            <img src="headshot.jpg"/>
-            <h2>Catherine Gomes</h2>
+        <!-- navi -->
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" style="background-color: #0BADA6;" href="/">Latitude</a>
+              <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="/humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="/temp.html">Temperature</a>
+                        <a class="dropdown-item" href="/wind.html">Wind</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                  </li>
+        
+                </ul>
+              </div>
+            </nav>
         </div>
+
+        <!-- content  -->
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    Eyeballs integrate visualize proactive e-tailers syndicate platforms ecologies B2B innovative reinvent design leading-edge, solutions. Dot-com holistic 24/7 open-source users visualize platforms communities back-end integrate open-source integrated embedded reinvent back-end; e-tailers B2C viral?
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    Eyeballs integrate visualize proactive e-tailers syndicate platforms ecologies B2B innovative reinvent design leading-edge, solutions. Dot-com holistic 24/7 open-source users visualize platforms communities back-end integrate open-source integrated embedded reinvent back-end; e-tailers B2C viral?
-                </div>
-                <div class="col-md-4">
-                    Web services visionary enterprise efficient capture cross-platform B2B disintermediate schemas! Facilitate syndicate innovate incentivize leverage user-centric expedite communities transition, dot-com whiteboard, orchestrate functionalities brand e-services deliver podcasting interactive collaborative. Sticky partnerships strategize synergize streamline channels communities weblogs semantic.
-                </div>
+          <div class="row">
+            <div class="col-lg-7 col-md-12">
+              <!-- Left box  -->
+              <div class="box">
+                <h3 class="title">Climate Dashboard</h3>
+                <hr>
+                <img src="../Resources/assets/images/Fig1.png" class="vizualization rounded float-left" alt="Max Temperature Graph">
+                <p>This dashboard is an extension of the WeatherPy API to learn HTML, CSS and Flask by utilizing the results obtained from API queries and subsequent analysis to identify differences in climate near the equator. A minimum of 500 unique (non-repeat) cities were sampled based on latitude and longitude to assess weather conditions. Analysis with plotly is available to <a href=“https://github.com/catherinegomes/python-api-challenge/blob/master/WeatherPy_with_plotly.ipynb”>view in GitHub.</a> Version with matplotlib is available to <a href=“https://github.com/catherinegomes/python-api-challenge/blob/master/WeatherPy.ipynb”>view in GitHub.</a></p>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    Eyeballs integrate visualize proactive e-tailers syndicate platforms ecologies B2B innovative reinvent design leading-edge, solutions. Dot-com holistic 24/7 open-source users visualize platforms communities back-end integrate open-source integrated embedded reinvent back-end; e-tailers B2C viral?
+            <div class="col-lg-5 col-md-12">
+              <!-- Right Box -->
+              <div class="box">
+                <h3 class="title">Visualizations</h3>
+                <hr>
+
+                <div class="container">
+                  <div class="row" style="padding-bottom: 30px;">
+                    <div class="col-6">
+                      <a href="temp.html">
+                        <img class="panel" src="../Resources/assets/images/Fig1.png" alt="Max Temperature">
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="humidity.html">
+                        <img class="panel" src="../Resources/assets/images/Fig2.png" alt="Humidity">
+                      </a>
+                    </div>
+                  </div>
+      
+                  <div class="row" style="padding-bottom: 30px;">
+                    <div class="col-6">
+                      <a href="cloudiness.html">
+                        <img class="panel" src="../Resources/assets/images/Fig3.png" alt="Cloudiness">
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="wind.html">
+                        <img class="panel" src="../Resources/assets/images/Fig4.png" alt="Wind Speed">
+                      </a>
+                    </div>
+      
+      
+                  </div>
                 </div>
+      
+      
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-8">
-                    Cross-media 24/7 web services models: networks, clicks-and-mortar; communities initiatives authentic global real-time granular design, synergize. Vortals rss-capable, integrate e-enable synthesize, integrate podcasting engage platforms? Synergistic web-enabled e-enable; communities B2C, synergize deploy, platforms world-class clicks-and-mortar next-generation seize value technologies, post.
-                </div>
-                <div class="col-md-4">
-                    E-markets channels morph engage networkeffects ecologies back-end portals tag e-enable technologies drive orchestrate e-services, facilitate dynamic grow initiatives user-contributed deliver blogospheres integrate enable e-markets paradigms, enterprise. Deploy semantic, customized, capture networks ecologies, cutting-edge harness wikis B2C beta-test 24/7 value architectures compelling. ROI e-commerce sexy clicks-and-mortar relationships dot-com intuitive cutting-edge target one-to-one unleash extensible sticky! Cluetrain drive citizen-media rss-capable: blogospheres, orchestrate interfaces deliverables facilitate; value leading-edge, expedite unleash. Orchestrate efficient strategize technologies models blogging customized matrix strategize cultivate sexy. Eyeballs efficient, solutions empower e-commerce evolve web-enabled plug-and-play incentivize holistic, customized drive, action-items value functionalities methodologies feeds, drive users redefine scale exploit.
-                </div>
-            </div>
+          </div>
         </div>
-    </body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">Copyright &copy; Catherine Gomes 2020</div>
+  </footer>
+
+  <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
 </html>
