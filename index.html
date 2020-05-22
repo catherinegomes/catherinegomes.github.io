@@ -1,119 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8">
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bootstrap Visualization</title>
-        <link rel="stylesheet" href="/Resources/assets/css/style.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>C. Gomes Resume</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
-
-    <body>
-        <!-- navi -->
-        <div class="navigation">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" style="background-color: #0BADA6;" href="/">Latitude</a>
-              <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      Plots
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="/humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="/temp.html">Temperature</a>
-                        <a class="dropdown-item" href="/wind.html">Wind</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
-                  </li>
-        
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"
+                ><span class="d-block d-lg-none">Catherine Gomes</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span></a
+            ><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#volunteering">Volunteering</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                 </ul>
-              </div>
-            </nav>
-        </div>
-
-        <!-- content  -->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-md-12">
-              <!-- Left box  -->
-              <div class="box">
-                <h3 class="title">Climate Dashboard</h3>
-                <hr>
-                <img src="../Resources/assets/images/Fig1.png" class="vizualization rounded float-left" alt="Max Temperature Graph">
-                <p>This dashboard is an extension of the WeatherPy API to learn HTML, CSS and Flask by utilizing the results obtained from API queries and subsequent analysis to identify differences in climate near the equator. A minimum of 500 unique (non-repeat) cities were sampled based on latitude and longitude to assess weather conditions. Analysis with plotly is available to <a href=“https://github.com/catherinegomes/python-api-challenge/blob/master/WeatherPy_with_plotly.ipynb”>view in GitHub.</a> Version with matplotlib is available to <a href=“https://github.com/catherinegomes/python-api-challenge/blob/master/WeatherPy.ipynb”>view in GitHub.</a></p>
-              </div>
             </div>
-            <div class="col-lg-5 col-md-12">
-              <!-- Right Box -->
-              <div class="box">
-                <h3 class="title">Visualizations</h3>
-                <hr>
-
-                <div class="container">
-                  <div class="row" style="padding-bottom: 30px;">
-                    <div class="col-6">
-                      <a href="temp.html">
-                        <img class="panel" src="../Resources/assets/images/Fig1.png" alt="Max Temperature">
-                      </a>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">Catherine <span class="text-primary">Gomes</span></h1>
+                    <div class="subheading mb-5">Austin, Texas · <a href="tel:+16174606049">617-460-6049</a> · <a href="mailto:cgomestx@gmail.com">cgomestx@gmail.com</a></div>
+                    <p class="lead mb-5">I am an analytical professional with experience designing and creating templates for a fast-growing biotech. I am passionate about delivering results, excel with documentation, enjoy supporting and working with others. I am a collaborative team player that demonstrates initiative, resilience and is eager to grow in an Agile environment.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/catherinegomes/"><i class="fab fa-linkedin-in"></i></a><a class="social-icon" href="https://www.github.com/catherinegomes"><i class="fab fa-github"></i></a>
                     </div>
-                    <div class="col-6">
-                      <a href="humidity.html">
-                        <img class="panel" src="../Resources/assets/images/Fig2.png" alt="Humidity">
-                      </a>
-                    </div>
-                  </div>
-      
-                  <div class="row" style="padding-bottom: 30px;">
-                    <div class="col-6">
-                      <a href="cloudiness.html">
-                        <img class="panel" src="../Resources/assets/images/Fig3.png" alt="Cloudiness">
-                      </a>
-                    </div>
-                    <div class="col-6">
-                      <a href="wind.html">
-                        <img class="panel" src="../Resources/assets/images/Fig4.png" alt="Wind Speed">
-                      </a>
-                    </div>
-      
-      
-                  </div>
                 </div>
-      
-      
-              </div>
-            </div>
-          </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-python" title="Python"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-database" title="SQL"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square" title="JavaScript"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-wordpress" title="WordPress"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-trello" title="Trello"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-slack" title="Slack"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Workflow</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Mobile-First, Responsive Design
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Cross Browser Testing & Debugging
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Cross Functional Teams
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>Agile Development & Scrum
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Role</h3>
+                            <div class="subheading mb-3">Ale-gorithm II</div>
+                            <div class="subheading mb-4">Skills</div>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Add link to GitHub</span></div>
+                    </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Application Scientist</h3>
+                            <div class="subheading mb-3"><a href="https://lyell.com/" target="_blank">Lyell Immunopharma</a></div>
+                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2020 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Associate Scientist II</h3>
+                            <div class="subheading mb-3"><a href="https://www.bluebirdbio.com/" target="_blank">bluebird bio</a></div>
+                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2017 - October 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Sr. Forensic Scientist</h3>
+                            <div class="subheading mb-3"><a href="https://www.austintexas.gov/department/forensic-science-bureau" target="_blank">City of Austin</a></div>
+                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2013 - June 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Production Associate II</h3>
+                            <div class="subheading mb-3"><a href="https://www.worldwide.com/" target="_blank">Worldwide Clinical Trials</a></div>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2012 - March 2013</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Graduate Research Assistant</h3>
+                            <div class="subheading mb-3"><a href="https://www.uthscsa.edu/academics/biomedical-sciences" target="_blank">UT Health San Antonio</a></div>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2011 - May 2012</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Directed Individual Study - Organic Chemistry</h3>
+                            <div class="subheading mb-3"><a href="https://www.chem.fsu.edu/" target="_blank">Florida State University</a></div>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2009 - April 2011</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><a href="https://techbootcamps.utexas.edu/" target="_blank">University of Texas at Austin</a></h3>
+                            <div class="subheading mb-3">McCombs School of Business · Certificate</div>
+                            <div>Data Analytics & Visualization</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><a href="https://www.chem.fsu.edu/" target="_blank">Florida State University</a></h3>
+                            <div class="subheading mb-3">Department of Chemistry & Biochemistry · Bachelor of Science</div>
+                            <div>Biochemistry</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2011</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Volunteering-->
+            <section class="resume-section" id="volunteering">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Volunteering</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Role</h3>
+                            <div class="subheading mb-3">Ale-gorithm II</div>
+                            <div class="subheading mb-4">Skills</div>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Add link to GitHub</span></div>
+                    </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>Google Analytics Certified Developer
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>1<sup>st </sup>Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
         </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer">Copyright &copy; Catherine Gomes 2020</div>
-  </footer>
-
-  <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
